@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PostsTableHeaderView" customModule="CastTaco" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="85P-z3-0T7">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m0W-bV-0A6">
+                            <rect key="frame" x="81" y="21" width="223" height="44.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <attributedString key="attributedText">
+                                <fragment content="DIRECTOR TACO'S CHALLENGE">
+                                    <attributes>
+                                        <color key="NSColor" red="0.53333333333333333" green="0.65490196078431373" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" size="13" name="TTNorms-Bold"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content=" Family singing in a car.">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <font key="NSFont" size="21" name="TTNorms-Bold"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="illustration_login" translatesAutoresizingMaskIntoConstraints="NO" id="4Zo-B3-Gim">
+                            <rect key="frame" x="20" y="17" width="46" height="52"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="4Zo-B3-Gim" secondAttribute="height" multiplier="23:26" id="yG4-G1-hRR"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_white" translatesAutoresizingMaskIntoConstraints="NO" id="3nX-Bw-THJ">
+                            <rect key="frame" x="339" y="12" width="21" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="21" id="O4U-fg-EpP"/>
+                                <constraint firstAttribute="height" constant="21" id="sal-v2-eWB"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reorderbutton_white" translatesAutoresizingMaskIntoConstraints="NO" id="6cz-i5-wEG">
+                            <rect key="frame" x="307" y="12" width="23" height="23"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="23" id="tdg-eP-2ya"/>
+                                <constraint firstAttribute="width" constant="23" id="wsm-Xt-fX5"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uL8-yw-Cxx">
+                            <rect key="frame" x="302" y="12" width="28" height="28"/>
+                            <inset key="imageEdgeInsets" minX="8" minY="4" maxX="3" maxY="6"/>
+                            <state key="normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="sortAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="lUt-IA-Pf0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4x-ys-Kbi">
+                            <rect key="frame" x="339" y="12" width="28" height="28"/>
+                            <inset key="imageEdgeInsets" minX="7" minY="7" maxX="7" maxY="8"/>
+                            <state key="normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="searchAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="gjw-r2-O0o"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="6cz-i5-wEG" firstAttribute="top" secondItem="85P-z3-0T7" secondAttribute="top" constant="12" id="2bH-lM-1OY"/>
+                        <constraint firstItem="uL8-yw-Cxx" firstAttribute="top" secondItem="6cz-i5-wEG" secondAttribute="top" id="6ky-IP-pE2"/>
+                        <constraint firstItem="4Zo-B3-Gim" firstAttribute="centerY" secondItem="85P-z3-0T7" secondAttribute="centerY" id="9t1-KO-jaG"/>
+                        <constraint firstAttribute="trailing" secondItem="3nX-Bw-THJ" secondAttribute="trailing" constant="15" id="C3Z-Y9-Tpz"/>
+                        <constraint firstItem="4Zo-B3-Gim" firstAttribute="leading" secondItem="85P-z3-0T7" secondAttribute="leading" constant="20" id="L4x-eg-xf0"/>
+                        <constraint firstItem="6cz-i5-wEG" firstAttribute="leading" secondItem="m0W-bV-0A6" secondAttribute="trailing" constant="3" id="QTn-y9-Uyp"/>
+                        <constraint firstItem="3nX-Bw-THJ" firstAttribute="top" secondItem="85P-z3-0T7" secondAttribute="top" constant="12" id="SkE-I4-awD"/>
+                        <constraint firstAttribute="width" secondItem="85P-z3-0T7" secondAttribute="height" multiplier="375:86" id="Y1M-Gk-f6c"/>
+                        <constraint firstAttribute="trailing" secondItem="6cz-i5-wEG" secondAttribute="trailing" constant="45" id="ZzP-bn-WE7"/>
+                        <constraint firstItem="t4x-ys-Kbi" firstAttribute="top" secondItem="3nX-Bw-THJ" secondAttribute="top" id="d3f-cL-Tc3"/>
+                        <constraint firstItem="t4x-ys-Kbi" firstAttribute="leading" secondItem="3nX-Bw-THJ" secondAttribute="leading" id="fJN-aK-UOe"/>
+                        <constraint firstItem="uL8-yw-Cxx" firstAttribute="width" secondItem="6cz-i5-wEG" secondAttribute="width" constant="5" id="je8-TS-bRB"/>
+                        <constraint firstItem="4Zo-B3-Gim" firstAttribute="top" secondItem="85P-z3-0T7" secondAttribute="top" constant="17" id="k63-07-oJg"/>
+                        <constraint firstAttribute="bottom" secondItem="4Zo-B3-Gim" secondAttribute="bottom" constant="17" id="lCN-UR-ACA"/>
+                        <constraint firstItem="m0W-bV-0A6" firstAttribute="centerY" secondItem="4Zo-B3-Gim" secondAttribute="centerY" id="o7H-XX-8xV"/>
+                        <constraint firstItem="t4x-ys-Kbi" firstAttribute="height" secondItem="3nX-Bw-THJ" secondAttribute="height" constant="7" id="rK3-RR-4in"/>
+                        <constraint firstItem="uL8-yw-Cxx" firstAttribute="trailing" secondItem="6cz-i5-wEG" secondAttribute="trailing" id="w74-jw-epa"/>
+                        <constraint firstItem="t4x-ys-Kbi" firstAttribute="width" secondItem="3nX-Bw-THJ" secondAttribute="width" constant="7" id="xl4-NV-c9N"/>
+                        <constraint firstItem="m0W-bV-0A6" firstAttribute="leading" secondItem="4Zo-B3-Gim" secondAttribute="trailing" constant="15" id="yb2-AT-vxB"/>
+                        <constraint firstItem="uL8-yw-Cxx" firstAttribute="height" secondItem="6cz-i5-wEG" secondAttribute="height" constant="5" id="zhX-nk-zMg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="85P-z3-0T7" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="dIb-g9-ODi"/>
+                <constraint firstItem="85P-z3-0T7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dRa-Te-532"/>
+                <constraint firstItem="85P-z3-0T7" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="ob4-PT-4lu"/>
+                <constraint firstItem="85P-z3-0T7" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ryC-vn-gKE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnSearch" destination="t4x-ys-Kbi" id="dnT-W2-wkP"/>
+                <outlet property="lblChallengeName" destination="m0W-bV-0A6" id="JwI-jd-gSF"/>
+            </connections>
+            <point key="canvasLocation" x="18.5" y="-246"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="illustration_login" width="120" height="67"/>
+        <image name="reorderbutton_white" width="45" height="45"/>
+        <image name="search_white" width="45" height="45"/>
+    </resources>
+</document>

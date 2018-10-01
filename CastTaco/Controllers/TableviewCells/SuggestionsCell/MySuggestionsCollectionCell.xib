@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="tt_norms_medium.otf">
+            <string>TTNorms-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MySuggestionsCollectionCell" customModule="CastTaco" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="111"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="111"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H99-zL-0R9">
+                        <rect key="frame" x="311" y="77" width="21" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="21" id="7bE-Xa-bmY"/>
+                            <constraint firstAttribute="height" constant="21" id="Qnf-dV-fNn"/>
+                        </constraints>
+                        <state key="normal" image="starvoted"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHG-vB-LUO">
+                        <rect key="frame" x="284.5" y="80" width="20" height="17"/>
+                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="14"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHe-FI-ME3">
+                        <rect key="frame" x="338" y="76" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="89U-eW-cSH"/>
+                            <constraint firstAttribute="width" constant="25" id="fFm-QR-pcV"/>
+                        </constraints>
+                        <state key="normal" image="bin"/>
+                        <connections>
+                            <action selector="deleteAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="fY4-g7-iZ0"/>
+                        </connections>
+                    </button>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4z-cD-FCQ">
+                        <rect key="frame" x="12" y="0.0" width="351" height="70"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="D4z-cD-FCQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="02Q-Pc-LpG"/>
+                <constraint firstItem="D4z-cD-FCQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="CSC-gp-D0F"/>
+                <constraint firstAttribute="bottom" secondItem="H99-zL-0R9" secondAttribute="bottom" constant="13" id="H8Y-Io-Uoc"/>
+                <constraint firstItem="dHe-FI-ME3" firstAttribute="leading" secondItem="H99-zL-0R9" secondAttribute="trailing" constant="6" id="JQ9-JD-JX6"/>
+                <constraint firstAttribute="bottom" secondItem="eHG-vB-LUO" secondAttribute="bottom" constant="14" id="MKr-XN-SIP"/>
+                <constraint firstItem="dHe-FI-ME3" firstAttribute="top" secondItem="D4z-cD-FCQ" secondAttribute="bottom" constant="6" id="NSu-po-IZr"/>
+                <constraint firstAttribute="trailing" secondItem="dHe-FI-ME3" secondAttribute="trailing" constant="12" id="SGp-Yz-DJv"/>
+                <constraint firstAttribute="trailing" secondItem="D4z-cD-FCQ" secondAttribute="trailing" constant="12" id="hua-Fx-jbT"/>
+                <constraint firstAttribute="bottom" secondItem="dHe-FI-ME3" secondAttribute="bottom" constant="10" id="jN1-Ua-hNQ"/>
+                <constraint firstItem="H99-zL-0R9" firstAttribute="leading" secondItem="eHG-vB-LUO" secondAttribute="trailing" constant="7" id="vI2-LM-LEW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="375" height="101"/>
+            <connections>
+                <outlet property="btnDelete" destination="dHe-FI-ME3" id="vcE-h8-teZ"/>
+                <outlet property="lblStarCount" destination="eHG-vB-LUO" id="iyK-JO-yzi"/>
+                <outlet property="twTextLbl" destination="D4z-cD-FCQ" id="ccw-5Y-e8l"/>
+            </connections>
+            <point key="canvasLocation" x="56.5" y="70.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bin" width="22" height="22"/>
+        <image name="starvoted" width="45" height="45"/>
+    </resources>
+</document>

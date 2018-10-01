@@ -1,18 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+=======
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+>>>>>>> origin/master
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
+<<<<<<< HEAD
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="tt_norms_medium.otf">
+            <string>TTNorms-Medium</string>
+        </array>
+    </customFonts>
+=======
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+>>>>>>> origin/master
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DiscardPopupView" customModule="CastTaco" customModuleProvider="target">
+<<<<<<< HEAD
+            <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discard and record new video?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03U-0x-rVR">
+                    <rect key="frame" x="16" y="21" width="343" height="31.5"/>
+                    <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="19"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.32549019607843138" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="If you record a new video your current video will be discarded" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IeO-lF-kA6">
+                    <rect key="frame" x="12" y="62.5" width="351" height="40.5"/>
+                    <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
+                    <color key="textColor" red="0.40784313725490196" green="0.41568627450980394" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1b-yo-N0K">
+                    <rect key="frame" x="0.0" y="122" width="187.5" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Gf6-zZ-RmZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
+                    <state key="normal" title="Keep">
+                        <color key="titleColor" red="0.33333333333333331" green="0.32549019607843138" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="keepAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Sb2-z9-IgP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ae0-uG-MI0">
+                    <rect key="frame" x="187.5" y="122" width="187.5" height="45"/>
+                    <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="17"/>
+                    <state key="normal" title="Discard">
+                        <color key="titleColor" red="0.33333333329999998" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="discardAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="FNx-DZ-fMM"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qm3-Ga-6Lk">
+                    <rect key="frame" x="187" y="122" width="1" height="45"/>
+=======
             <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -66,6 +124,7 @@
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qm3-Ga-6Lk">
                     <rect key="frame" x="187" y="115" width="1" height="45"/>
+>>>>>>> origin/master
                     <color key="backgroundColor" red="0.91622978450000003" green="0.90793782469999995" blue="0.95330613850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="g6q-Ee-Uik"/>
@@ -76,7 +135,11 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQs-eW-TQo">
+<<<<<<< HEAD
+                    <rect key="frame" x="0.0" y="121" width="375" height="1"/>
+=======
                     <rect key="frame" x="0.0" y="114" width="375" height="1"/>
+>>>>>>> origin/master
                     <color key="backgroundColor" red="0.91622978450000003" green="0.90793782469999995" blue="0.95330613850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="Kmo-wO-uyJ"/>
@@ -88,10 +151,28 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+<<<<<<< HEAD
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="IeO-lF-kA6" secondAttribute="trailing" constant="12" id="0bQ-Z2-BH4"/>
+=======
+>>>>>>> origin/master
                 <constraint firstItem="Ae0-uG-MI0" firstAttribute="top" secondItem="Z1b-yo-N0K" secondAttribute="top" id="0sj-tf-LQ2"/>
                 <constraint firstItem="Z1b-yo-N0K" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4Sc-rx-X90"/>
                 <constraint firstAttribute="trailing" secondItem="QQs-eW-TQo" secondAttribute="trailing" id="7zo-O0-T3E"/>
                 <constraint firstItem="qm3-Ga-6Lk" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="BWh-8j-evU"/>
+<<<<<<< HEAD
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Z1b-yo-N0K" secondAttribute="bottom" id="DG0-mH-QNc"/>
+                <constraint firstItem="Ae0-uG-MI0" firstAttribute="leading" secondItem="Z1b-yo-N0K" secondAttribute="trailing" id="FbS-gc-BCx"/>
+                <constraint firstItem="QQs-eW-TQo" firstAttribute="top" secondItem="IeO-lF-kA6" secondAttribute="bottom" constant="18" id="Hro-HD-oIB"/>
+                <constraint firstAttribute="bottom" secondItem="qm3-Ga-6Lk" secondAttribute="bottom" id="N2t-en-dHc"/>
+                <constraint firstItem="Ae0-uG-MI0" firstAttribute="width" secondItem="Z1b-yo-N0K" secondAttribute="width" id="Pjq-fF-0Ln"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="03U-0x-rVR" secondAttribute="trailing" constant="16" id="RU9-0q-Xg8"/>
+                <constraint firstItem="Ae0-uG-MI0" firstAttribute="bottom" secondItem="Z1b-yo-N0K" secondAttribute="bottom" id="Tqg-kV-ysZ"/>
+                <constraint firstItem="03U-0x-rVR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="21" id="ej6-4b-dVt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ae0-uG-MI0" secondAttribute="trailing" id="f3B-3W-RK2"/>
+                <constraint firstItem="IeO-lF-kA6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="gB5-s3-X4k"/>
+                <constraint firstItem="IeO-lF-kA6" firstAttribute="top" secondItem="03U-0x-rVR" secondAttribute="bottom" constant="10" id="i9S-gw-sw6"/>
+                <constraint firstItem="03U-0x-rVR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="kqR-6x-mbp"/>
+=======
                 <constraint firstItem="UP6-0x-a3b" firstAttribute="top" secondItem="IeO-lF-kA6" secondAttribute="bottom" constant="8" id="F1M-ve-zut"/>
                 <constraint firstItem="Ae0-uG-MI0" firstAttribute="leading" secondItem="Z1b-yo-N0K" secondAttribute="trailing" id="FbS-gc-BCx"/>
                 <constraint firstItem="UP6-0x-a3b" firstAttribute="leading" secondItem="03U-0x-rVR" secondAttribute="leading" id="JSz-in-Ee3"/>
@@ -107,13 +188,24 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ae0-uG-MI0" secondAttribute="trailing" id="f3B-3W-RK2"/>
                 <constraint firstItem="03U-0x-rVR" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="fh1-49-lrh"/>
                 <constraint firstItem="IeO-lF-kA6" firstAttribute="leading" secondItem="03U-0x-rVR" secondAttribute="leading" id="i6e-cN-GlN"/>
+>>>>>>> origin/master
                 <constraint firstItem="qm3-Ga-6Lk" firstAttribute="top" secondItem="QQs-eW-TQo" secondAttribute="bottom" id="lKT-oH-LbP"/>
                 <constraint firstItem="QQs-eW-TQo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lbt-xR-VPT"/>
                 <constraint firstItem="Ae0-uG-MI0" firstAttribute="height" secondItem="Z1b-yo-N0K" secondAttribute="height" id="qH8-K6-6yy"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+<<<<<<< HEAD
+            <connections>
+                <outlet property="btnCancel" destination="Ae0-uG-MI0" id="mI4-1q-nE9"/>
+                <outlet property="btnOk" destination="Z1b-yo-N0K" id="uTv-Sh-iOt"/>
+                <outlet property="lblDescription" destination="03U-0x-rVR" id="hI3-TU-7fb"/>
+                <outlet property="lblTitle" destination="03U-0x-rVR" id="Obn-ND-lvg"/>
+            </connections>
+            <point key="canvasLocation" x="-39.5" y="-372.5"/>
+=======
             <point key="canvasLocation" x="-39.5" y="-376"/>
+>>>>>>> origin/master
         </view>
     </objects>
 </document>

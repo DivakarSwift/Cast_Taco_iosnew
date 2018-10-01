@@ -7,7 +7,11 @@
 		<key>CastTaco.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
+			<integer>3</integer>
+=======
 			<integer>0</integer>
+>>>>>>> origin/master
 		</dict>
 	</dict>
 </dict>

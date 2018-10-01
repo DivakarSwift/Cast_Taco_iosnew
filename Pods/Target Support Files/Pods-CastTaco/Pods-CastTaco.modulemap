@@ -1,0 +1,6 @@
+framework module Pods_CastTaco {
+  umbrella header "Pods-CastTaco-umbrella.h"
+
+  export *
+  module * { export * }
+}

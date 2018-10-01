@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="tt_norms_medium.otf">
+            <string>TTNorms-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="358" id="KGk-i7-Jjw" customClass="PlayVideoCell" customModule="CastTaco" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="358"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="357.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qvV-uc-tjq">
+                        <rect key="frame" x="11" y="11" width="298" height="341"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.88235294119999996" green="0.8862745098" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DrR-Lc-AnU">
+                        <rect key="frame" x="78" y="21" width="190" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="SG7-d6-OrG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="14"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mhj-mH-W0Z">
+                        <rect key="frame" x="26" y="69" width="268" height="268"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SingingAvtar.png" translatesAutoresizingMaskIntoConstraints="NO" id="SeM-Tk-TEU">
+                                <rect key="frame" x="0.0" y="0.0" width="268" height="268"/>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="7db-vJ-6q7">
+                                <rect key="frame" x="245" y="8" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="0mY-sA-Oef"/>
+                                    <constraint firstAttribute="height" constant="15" id="17F-kp-HI0"/>
+                                </constraints>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.8862745098" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="mhj-mH-W0Z" secondAttribute="height" multiplier="1:1" id="3OK-yG-epy"/>
+                            <constraint firstItem="7db-vJ-6q7" firstAttribute="top" secondItem="mhj-mH-W0Z" secondAttribute="top" constant="8" id="7vD-Zs-eyx"/>
+                            <constraint firstAttribute="trailing" secondItem="7db-vJ-6q7" secondAttribute="trailing" constant="8" id="B2G-zM-uqR"/>
+                            <constraint firstAttribute="bottom" secondItem="SeM-Tk-TEU" secondAttribute="bottom" id="Hgv-Kx-VfI"/>
+                            <constraint firstAttribute="trailing" secondItem="SeM-Tk-TEU" secondAttribute="trailing" id="baT-N6-mrA"/>
+                            <constraint firstItem="SeM-Tk-TEU" firstAttribute="top" secondItem="mhj-mH-W0Z" secondAttribute="top" id="sH4-RQ-UkM"/>
+                            <constraint firstItem="SeM-Tk-TEU" firstAttribute="leading" secondItem="mhj-mH-W0Z" secondAttribute="leading" id="u3R-Xo-MIM"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample-user" translatesAutoresizingMaskIntoConstraints="NO" id="eUl-Gw-wRE">
+                        <rect key="frame" x="26" y="21" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="5qe-vR-SaP"/>
+                            <constraint firstAttribute="width" constant="40" id="Wbn-6R-TRS"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvk-p4-J2O">
+                        <rect key="frame" x="261" y="21" width="33" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="JxB-6q-gs0"/>
+                            <constraint firstAttribute="width" constant="33" id="bZG-5u-LEI"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="15" minY="14" maxX="5" maxY="13"/>
+                        <state key="normal" image="cross"/>
+                        <connections>
+                            <action selector="cossPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FOP-wy-0hD"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DrR-Lc-AnU" firstAttribute="leading" secondItem="eUl-Gw-wRE" secondAttribute="trailing" constant="12" id="1UX-BA-YwP"/>
+                    <constraint firstItem="qvV-uc-tjq" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="5" id="4wr-7p-Dy6"/>
+                    <constraint firstItem="DrR-Lc-AnU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="AuH-Hv-chr"/>
+                    <constraint firstItem="qvV-uc-tjq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-5" id="HWd-VZ-Gqm"/>
+                    <constraint firstItem="mhj-mH-W0Z" firstAttribute="top" secondItem="DrR-Lc-AnU" secondAttribute="bottom" constant="8" id="URj-mB-BKf"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="DrR-Lc-AnU" secondAttribute="trailing" constant="36" id="Ubx-DN-avR"/>
+                    <constraint firstItem="mhj-mH-W0Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="Z6Y-Ep-10V"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="mhj-mH-W0Z" secondAttribute="trailing" constant="10" id="bAO-87-qWl"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="mhj-mH-W0Z" secondAttribute="bottom" constant="10" id="cMe-x0-X6C"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="qvV-uc-tjq" secondAttribute="bottom" constant="-5" id="d2n-eZ-mU5"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="pvk-p4-J2O" secondAttribute="trailing" constant="10" id="eOF-f8-uq4"/>
+                    <constraint firstItem="eUl-Gw-wRE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="qab-yr-uFV"/>
+                    <constraint firstItem="qvV-uc-tjq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="s6D-r1-4dC"/>
+                    <constraint firstItem="eUl-Gw-wRE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="wJc-Km-xU2"/>
+                    <constraint firstItem="pvk-p4-J2O" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="xrN-Bf-zKZ"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                        <real key="value" value="0.0"/>
+                    </userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                        <real key="value" value="0.0"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblUsername" destination="DrR-Lc-AnU" id="woE-YR-bSC"/>
+                <outlet property="loader" destination="7db-vJ-6q7" id="MBA-lt-EQe"/>
+                <outlet property="profilePic" destination="eUl-Gw-wRE" id="oaM-WV-Qg7"/>
+                <outlet property="thumbnail" destination="SeM-Tk-TEU" id="1OX-fL-fOH"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="201"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="SingingAvtar.png" width="763" height="763"/>
+        <image name="cross" width="45" height="45"/>
+        <image name="sample-user" width="128" height="128"/>
+    </resources>
+</document>

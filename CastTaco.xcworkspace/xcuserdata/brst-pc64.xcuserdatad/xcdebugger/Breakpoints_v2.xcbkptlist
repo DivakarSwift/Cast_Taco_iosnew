@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CastTaco/ViewModels/LoginViewModel.swift"
+            timestampString = "559665486.670668"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "246"
+            endingLineNumber = "246"
+            landmarkName = "checkEmailAvailability(email:status:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (__ObjC.NSDictionary) -&gt; () in CastTaco.LoginViewModel.checkEmailAvailability(email: Swift.Optional&lt;Swift.String&gt;, status: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "CastTaco"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brst-pc64/Desktop/initial/Cast_Taco_ios-master%202/CastTaco/ViewModels/LoginViewModel.swift"
+                  timestampString = "559032393.770207"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "237"
+                  endingLineNumber = "237"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #2 (__ObjC.NSDictionary) -&gt; () in CastTaco.LoginViewModel.checkEmailAvailability(email: Swift.Optional&lt;Swift.String&gt;, status: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "CastTaco"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brst-pc64/Desktop/initial/Cast_Taco_ios-master%202/CastTaco/ViewModels/LoginViewModel.swift"
+                  timestampString = "559032393.7731431"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "238"
+                  endingLineNumber = "238"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

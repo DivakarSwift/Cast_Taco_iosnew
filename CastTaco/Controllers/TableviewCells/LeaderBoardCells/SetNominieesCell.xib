@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="tt_norms_bold.otf">
+            <string>TTNorms-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ehi-BT-cub" customClass="SetNominieesCell" customModule="CastTaco" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="107"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9LF-OV-DB9">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="107"/>
+                    <color key="backgroundColor" red="0.95294117649999999" green="0.96470588239999999" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pj7-vV-ugi">
+                    <rect key="frame" x="43" y="20" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="0Mz-uC-6Vm"/>
+                        <constraint firstAttribute="height" constant="60" id="SNE-cT-JbW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="17"/>
+                    <state key="normal" title="1" backgroundImage="NR_empty_circle">
+                        <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" image="download.jpeg"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnCirlce1Action:" destination="ehi-BT-cub" eventType="touchUpInside" id="yej-zD-cDe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WZ-o9-aPY">
+                    <rect key="frame" x="157" y="20" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="7kL-hZ-nuV"/>
+                        <constraint firstAttribute="height" constant="60" id="bCC-7C-sbH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="17"/>
+                    <state key="normal" title="2" backgroundImage="NR_empty_circle">
+                        <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" image="download.jpeg"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnCirlce2Action:" destination="ehi-BT-cub" eventType="touchUpInside" id="nry-2Z-xHE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTI-eg-Ekk">
+                    <rect key="frame" x="271" y="20" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="JdB-05-YoI"/>
+                        <constraint firstAttribute="width" constant="60" id="hwV-RR-oZr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="17"/>
+                    <state key="normal" title="3" backgroundImage="NR_empty_circle">
+                        <color key="titleColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" image="download.jpeg"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnCirlce3Action:" destination="ehi-BT-cub" eventType="touchUpInside" id="4gB-Mk-ew8"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9s-NH-adi">
+                    <rect key="frame" x="38" y="20" width="24" height="24"/>
+                    <color key="backgroundColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="YlX-V2-0Sn"/>
+                        <constraint firstAttribute="width" constant="24" id="q0p-Pr-qPf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ily-jZ-aai">
+                    <rect key="frame" x="152" y="20" width="24" height="24"/>
+                    <color key="backgroundColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="Em3-nK-ihq"/>
+                        <constraint firstAttribute="width" constant="24" id="Ksn-ds-qHN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ujb-Od-fs5">
+                    <rect key="frame" x="266" y="20" width="24" height="24"/>
+                    <color key="backgroundColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="6HK-1A-jwg"/>
+                        <constraint firstAttribute="height" constant="24" id="B20-Ic-CkK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mark" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6td-7R-PS6">
+                    <rect key="frame" x="38" y="83" width="70" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="XKg-2f-zX0"/>
+                        <constraint firstAttribute="width" constant="70" id="xD1-dt-w74"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="12"/>
+                    <color key="textColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mark" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYS-7w-8NW">
+                    <rect key="frame" x="152" y="83" width="70" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="ZdT-0j-EMY"/>
+                        <constraint firstAttribute="width" constant="70" id="nOX-nK-oMl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="12"/>
+                    <color key="textColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mark" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Qb-Q8-QiU">
+                    <rect key="frame" x="266" y="83" width="70" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="eIh-RP-5pQ"/>
+                        <constraint firstAttribute="width" constant="70" id="tVo-NQ-Mkm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="TTNorms-Bold" family="TT Norms" pointSize="12"/>
+                    <color key="textColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.95294117649999999" green="0.96470588239999999" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eTI-eg-Ekk" firstAttribute="leading" secondItem="6WZ-o9-aPY" secondAttribute="trailing" constant="54" id="0bI-1V-XLp"/>
+                <constraint firstItem="1Mu-Lo-fo6" firstAttribute="bottom" secondItem="eTI-eg-Ekk" secondAttribute="bottom" constant="27" id="1qF-yM-Cs7"/>
+                <constraint firstItem="6td-7R-PS6" firstAttribute="centerX" secondItem="Pj7-vV-ugi" secondAttribute="centerX" id="4eM-EO-Onh"/>
+                <constraint firstItem="6WZ-o9-aPY" firstAttribute="centerX" secondItem="ehi-BT-cub" secondAttribute="centerX" id="76V-ce-WLY"/>
+                <constraint firstItem="9LF-OV-DB9" firstAttribute="bottom" secondItem="1Mu-Lo-fo6" secondAttribute="bottom" id="90y-8F-oCl"/>
+                <constraint firstItem="9LF-OV-DB9" firstAttribute="leading" secondItem="1Mu-Lo-fo6" secondAttribute="leading" id="HYu-Rz-Qce"/>
+                <constraint firstItem="Pj7-vV-ugi" firstAttribute="top" secondItem="1Mu-Lo-fo6" secondAttribute="top" constant="20" id="ObH-59-yeX"/>
+                <constraint firstItem="1Qb-Q8-QiU" firstAttribute="centerX" secondItem="eTI-eg-Ekk" secondAttribute="centerX" id="QTa-xo-8lz"/>
+                <constraint firstItem="ily-jZ-aai" firstAttribute="leading" secondItem="6WZ-o9-aPY" secondAttribute="leading" constant="-5" id="Rdx-7j-CNo"/>
+                <constraint firstItem="1Mu-Lo-fo6" firstAttribute="bottom" secondItem="6WZ-o9-aPY" secondAttribute="bottom" constant="27" id="ToU-OD-ftn"/>
+                <constraint firstItem="1Mu-Lo-fo6" firstAttribute="bottom" secondItem="Pj7-vV-ugi" secondAttribute="bottom" constant="27" id="UPd-qp-M4u"/>
+                <constraint firstItem="9LF-OV-DB9" firstAttribute="trailing" secondItem="1Mu-Lo-fo6" secondAttribute="trailing" id="UdW-mO-ZHg"/>
+                <constraint firstItem="d9s-NH-adi" firstAttribute="leading" secondItem="Pj7-vV-ugi" secondAttribute="leading" constant="-5" id="V53-Hj-zy9"/>
+                <constraint firstItem="1Qb-Q8-QiU" firstAttribute="top" secondItem="eTI-eg-Ekk" secondAttribute="bottom" constant="3" id="bBb-fb-g50"/>
+                <constraint firstItem="Ujb-Od-fs5" firstAttribute="leading" secondItem="eTI-eg-Ekk" secondAttribute="leading" constant="-5" id="bG1-ux-MxC"/>
+                <constraint firstItem="9LF-OV-DB9" firstAttribute="top" secondItem="1Mu-Lo-fo6" secondAttribute="top" id="eys-Vy-ea4"/>
+                <constraint firstItem="Ujb-Od-fs5" firstAttribute="top" secondItem="eTI-eg-Ekk" secondAttribute="top" id="fU7-xo-EPy"/>
+                <constraint firstItem="vYS-7w-8NW" firstAttribute="top" secondItem="6WZ-o9-aPY" secondAttribute="bottom" constant="3" id="lzd-dW-5Rn"/>
+                <constraint firstItem="ily-jZ-aai" firstAttribute="top" secondItem="6WZ-o9-aPY" secondAttribute="top" id="nW2-DK-ti0"/>
+                <constraint firstItem="6WZ-o9-aPY" firstAttribute="leading" secondItem="Pj7-vV-ugi" secondAttribute="trailing" constant="54" id="ncm-on-LhH"/>
+                <constraint firstItem="eTI-eg-Ekk" firstAttribute="top" secondItem="1Mu-Lo-fo6" secondAttribute="top" constant="20" id="ndH-fH-rdJ"/>
+                <constraint firstItem="vYS-7w-8NW" firstAttribute="centerX" secondItem="6WZ-o9-aPY" secondAttribute="centerX" id="q5I-Lw-avL"/>
+                <constraint firstItem="6td-7R-PS6" firstAttribute="top" secondItem="Pj7-vV-ugi" secondAttribute="bottom" constant="3" id="rHj-iY-YIv"/>
+                <constraint firstItem="6WZ-o9-aPY" firstAttribute="top" secondItem="1Mu-Lo-fo6" secondAttribute="top" constant="20" id="tgI-Xx-X4E"/>
+                <constraint firstItem="d9s-NH-adi" firstAttribute="top" secondItem="Pj7-vV-ugi" secondAttribute="top" id="uql-Rc-I3f"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="1Mu-Lo-fo6"/>
+            <connections>
+                <outlet property="btnCircle1" destination="Pj7-vV-ugi" id="rAi-1y-5ri"/>
+                <outlet property="btnCircle2" destination="6WZ-o9-aPY" id="ud4-4F-DpH"/>
+                <outlet property="btnCircle3" destination="eTI-eg-Ekk" id="cX0-DF-51K"/>
+                <outlet property="lblRank1" destination="d9s-NH-adi" id="05J-az-hTK"/>
+                <outlet property="lblRank2" destination="ily-jZ-aai" id="Nqg-z1-5kH"/>
+                <outlet property="lblRank3" destination="Ujb-Od-fs5" id="yt5-X7-AMS"/>
+                <outlet property="lblUsernameRank1" destination="6td-7R-PS6" id="fUw-Un-bNf"/>
+                <outlet property="lblUsernameRank2" destination="vYS-7w-8NW" id="h5F-FI-3ch"/>
+                <outlet property="lblUsernameRank3" destination="1Qb-Q8-QiU" id="cgZ-op-6J5"/>
+            </connections>
+            <point key="canvasLocation" x="222.5" y="-693"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="NR_empty_circle" width="70" height="70"/>
+        <image name="download.jpeg" width="181" height="182"/>
+    </resources>
+</document>

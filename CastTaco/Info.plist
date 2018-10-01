@@ -17,9 +17,44 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
+<<<<<<< HEAD
+	<string>2.0.2</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Capture Stories</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Take Pictures</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Capture Stories</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>tt_norms_black_italic.otf</string>
+		<string>tt_norms_black.otf</string>
+		<string>tt_norms_bold_italic.otf</string>
+		<string>tt_norms_bold.otf</string>
+		<string>tt_norms_extrabold_italic.otf</string>
+		<string>tt_norms_extrabold.otf</string>
+		<string>tt_norms_extralight_italic.otf</string>
+		<string>tt_norms_extralight.otf</string>
+		<string>tt_norms_heavy_italic.otf</string>
+		<string>tt_norms_heavy.otf</string>
+		<string>tt_norms_italic.otf</string>
+		<string>tt_norms_light_italic.otf</string>
+		<string>tt_norms_light.otf</string>
+		<string>tt_norms_medium_italic.otf</string>
+		<string>tt_norms_medium.otf</string>
+		<string>tt_norms_regular.otf</string>
+		<string>tt_norms_thin_italic.otf</string>
+		<string>tt_norms_thin.otf</string>
+	</array>
+=======
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+>>>>>>> origin/master
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -31,8 +66,11 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
+<<<<<<< HEAD
+=======
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+>>>>>>> origin/master
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -41,5 +79,33 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+<<<<<<< HEAD
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb324071621676064</string>
+			</array>
+		</dict>
+	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>FacebookAppID</key>
+	<string>324071621676064</string>
+	<key>FacebookDisplayName</key>
+	<string>Cast Taco</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-share-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
+=======
+>>>>>>> origin/master
 </dict>
 </plist>

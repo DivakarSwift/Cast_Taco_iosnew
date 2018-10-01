@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="tt_norms_medium.otf">
+            <string>TTNorms-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActionSheetViewController" customModule="CastTaco" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAction1" destination="bpR-oa-qRn" id="7j4-Ge-ARv"/>
+                <outlet property="btnAction2" destination="eRE-cn-dpf" id="Gsc-zn-ufa"/>
+                <outlet property="btnCancel" destination="AiO-2L-QPG" id="soQ-Em-xRX"/>
+                <outlet property="btnSingleAction" destination="3Md-Jp-8nF" id="JXn-Xk-eMz"/>
+                <outlet property="singleButtonView" destination="siR-op-TxL" id="QAH-Y0-1xO"/>
+                <outlet property="twoButtonsView" destination="bR2-Be-slf" id="uOa-iY-sfX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AiO-2L-QPG">
+                    <rect key="frame" x="16" y="710" width="343" height="58"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="AiO-2L-QPG" secondAttribute="height" multiplier="362:45" id="1CR-yg-JYx"/>
+                        <constraint firstAttribute="width" secondItem="AiO-2L-QPG" secondAttribute="height" multiplier="343:58" id="JSA-z0-3dt"/>
+                        <constraint firstAttribute="height" constant="90" id="KRK-Xn-d7h"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="15"/>
+                    <state key="normal" title="Never Mind">
+                        <color key="titleColor" red="0.4392156862745098" green="0.58039215686274503" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="1CR-yg-JYx"/>
+                            <exclude reference="KRK-Xn-d7h"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="1CR-yg-JYx"/>
+                            <exclude reference="JSA-z0-3dt"/>
+                            <exclude reference="KRK-Xn-d7h"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="20"/>
+                    </variation>
+                    <connections>
+                        <action selector="cancelAction:" destination="-1" eventType="touchUpInside" id="Xg4-1N-eJx"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="siR-op-TxL">
+                    <rect key="frame" x="16" y="645" width="343" height="57"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Md-Jp-8nF">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="57"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="89" id="6oc-i7-AvU"/>
+                                <constraint firstAttribute="width" secondItem="3Md-Jp-8nF" secondAttribute="height" multiplier="343:57" id="ont-nL-7dr"/>
+                                <constraint firstAttribute="width" secondItem="3Md-Jp-8nF" secondAttribute="height" multiplier="724:89" id="otc-4W-fHW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="15"/>
+                            <state key="normal" title="Delete">
+                                <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="6oc-i7-AvU"/>
+                                    <exclude reference="otc-4W-fHW"/>
+                                </mask>
+                            </variation>
+                            <variation key="widthClass=regular">
+                                <mask key="constraints">
+                                    <exclude reference="6oc-i7-AvU"/>
+                                    <exclude reference="ont-nL-7dr"/>
+                                    <include reference="otc-4W-fHW"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="20"/>
+                            </variation>
+                            <connections>
+                                <action selector="btnSingleAction:" destination="-1" eventType="touchUpInside" id="nU0-Tu-aau"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.84705882349999995" green="0.85490196080000003" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="siR-op-TxL" secondAttribute="height" multiplier="343:57" id="CD5-FK-tel"/>
+                        <constraint firstAttribute="trailing" secondItem="3Md-Jp-8nF" secondAttribute="trailing" id="Kbj-dq-6sT"/>
+                        <constraint firstAttribute="bottom" secondItem="3Md-Jp-8nF" secondAttribute="bottom" id="XS3-5o-hUB"/>
+                        <constraint firstItem="3Md-Jp-8nF" firstAttribute="leading" secondItem="siR-op-TxL" secondAttribute="leading" id="lMo-oP-HDK"/>
+                        <constraint firstAttribute="height" constant="200" id="n3Z-Jn-aVE">
+                            <variation key="widthClass=regular" constant="180"/>
+                        </constraint>
+                        <constraint firstAttribute="width" secondItem="siR-op-TxL" secondAttribute="height" multiplier="181:45" id="z3p-FH-ELc"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="n3Z-Jn-aVE"/>
+                            <exclude reference="z3p-FH-ELc"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=regular">
+                        <mask key="constraints">
+                            <exclude reference="n3Z-Jn-aVE"/>
+                            <include reference="z3p-FH-ELc"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bR2-Be-slf">
+                    <rect key="frame" x="16" y="587" width="343" height="115"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpR-oa-qRn">
+                            <rect key="frame" x="0.0" y="58" width="343" height="57"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="bpR-oa-qRn" secondAttribute="height" multiplier="343:57" id="0cZ-sj-zMm"/>
+                                <constraint firstAttribute="height" constant="89" id="9aZ-8Y-bhg"/>
+                                <constraint firstAttribute="width" secondItem="bpR-oa-qRn" secondAttribute="height" multiplier="724:89" id="jIN-sH-UuU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="15"/>
+                            <state key="normal" title="Inapprpriate. &quot;Watch out Mr. Taco!&quot;">
+                                <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="9aZ-8Y-bhg"/>
+                                    <exclude reference="jIN-sH-UuU"/>
+                                </mask>
+                            </variation>
+                            <variation key="widthClass=regular">
+                                <mask key="constraints">
+                                    <exclude reference="0cZ-sj-zMm"/>
+                                    <exclude reference="9aZ-8Y-bhg"/>
+                                    <include reference="jIN-sH-UuU"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="20"/>
+                            </variation>
+                            <connections>
+                                <action selector="action1:" destination="-1" eventType="touchUpInside" id="hPV-JN-ND6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRE-cn-dpf">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="57"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="189" id="FjW-7u-Ify">
+                                    <variation key="widthClass=regular" constant="89"/>
+                                </constraint>
+                                <constraint firstAttribute="width" secondItem="eRE-cn-dpf" secondAttribute="height" multiplier="723:89" id="dVp-Sw-N3i"/>
+                                <constraint firstAttribute="width" secondItem="eRE-cn-dpf" secondAttribute="height" multiplier="343:57" id="osN-ee-Pee"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="15"/>
+                            <state key="normal" title="Unfollow username">
+                                <color key="titleColor" red="0.43921568630000002" green="0.58039215690000001" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="FjW-7u-Ify"/>
+                                    <exclude reference="dVp-Sw-N3i"/>
+                                </mask>
+                            </variation>
+                            <variation key="widthClass=regular">
+                                <mask key="constraints">
+                                    <exclude reference="FjW-7u-Ify"/>
+                                    <include reference="dVp-Sw-N3i"/>
+                                    <exclude reference="osN-ee-Pee"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" name="TTNorms-Medium" family="TT Norms" pointSize="20"/>
+                            </variation>
+                            <connections>
+                                <action selector="action2:" destination="-1" eventType="touchUpInside" id="tqN-mz-TbA"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.84705882349999995" green="0.85490196080000003" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="bR2-Be-slf" secondAttribute="height" multiplier="181:45" id="2eP-rw-qqs"/>
+                        <constraint firstItem="bpR-oa-qRn" firstAttribute="top" secondItem="eRE-cn-dpf" secondAttribute="bottom" constant="1" id="4ZZ-Sx-dWx"/>
+                        <constraint firstItem="bpR-oa-qRn" firstAttribute="leading" secondItem="bR2-Be-slf" secondAttribute="leading" id="JE7-WM-PTA"/>
+                        <constraint firstAttribute="width" secondItem="bR2-Be-slf" secondAttribute="height" multiplier="343:115" id="M72-gi-ygi"/>
+                        <constraint firstAttribute="bottom" secondItem="bpR-oa-qRn" secondAttribute="bottom" id="NOM-X2-9Im"/>
+                        <constraint firstItem="eRE-cn-dpf" firstAttribute="leading" secondItem="bR2-Be-slf" secondAttribute="leading" id="bXf-K4-z0S"/>
+                        <constraint firstAttribute="trailing" secondItem="eRE-cn-dpf" secondAttribute="trailing" id="gnj-2u-cp9"/>
+                        <constraint firstAttribute="height" constant="200" id="uYg-pZ-a17">
+                            <variation key="widthClass=regular" constant="180"/>
+                        </constraint>
+                        <constraint firstAttribute="trailing" secondItem="bpR-oa-qRn" secondAttribute="trailing" id="yhw-7j-nWM"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="2eP-rw-qqs"/>
+                            <exclude reference="uYg-pZ-a17"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="2eP-rw-qqs"/>
+                            <exclude reference="M72-gi-ygi"/>
+                            <exclude reference="uYg-pZ-a17"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="AiO-2L-QPG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="1UQ-og-WQp"/>
+                <constraint firstItem="AiO-2L-QPG" firstAttribute="top" secondItem="bR2-Be-slf" secondAttribute="bottom" constant="8" id="3m7-Er-UuA"/>
+                <constraint firstItem="siR-op-TxL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="AkP-TD-Kwa"/>
+                <constraint firstItem="bR2-Be-slf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="IUJ-yT-QrX">
+                    <variation key="widthClass=regular" constant="16"/>
+                </constraint>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="siR-op-TxL" secondAttribute="trailing" constant="16" id="bUJ-RJ-DNw"/>
+                <constraint firstItem="AiO-2L-QPG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="hHe-lo-4aG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="AiO-2L-QPG" secondAttribute="bottom" constant="10" id="jUV-hW-7BA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bR2-Be-slf" secondAttribute="trailing" constant="16" id="kl3-qG-RdE">
+                    <variation key="widthClass=regular" constant="16"/>
+                </constraint>
+                <constraint firstItem="bR2-Be-slf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="mao-bJ-FXz"/>
+                <constraint firstItem="AiO-2L-QPG" firstAttribute="top" secondItem="siR-op-TxL" secondAttribute="bottom" constant="8" id="nE5-jz-0xD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bR2-Be-slf" secondAttribute="trailing" constant="22" id="qLF-PB-vRJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AiO-2L-QPG" secondAttribute="trailing" constant="22" id="rul-MI-4qo"/>
+                <constraint firstAttribute="trailing" secondItem="AiO-2L-QPG" secondAttribute="trailing" constant="16" id="yFh-QB-pO1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="qLF-PB-vRJ"/>
+                    <exclude reference="rul-MI-4qo"/>
+                    <exclude reference="mao-bJ-FXz"/>
+                    <exclude reference="hHe-lo-4aG"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=regular">
+                <mask key="constraints">
+                    <exclude reference="kl3-qG-RdE"/>
+                    <include reference="qLF-PB-vRJ"/>
+                    <include reference="rul-MI-4qo"/>
+                    <exclude reference="IUJ-yT-QrX"/>
+                    <include reference="mao-bJ-FXz"/>
+                    <exclude reference="1UQ-og-WQp"/>
+                    <include reference="hHe-lo-4aG"/>
+                    <exclude reference="yFh-QB-pO1"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="24.5" y="51"/>
+        </view>
+    </objects>
+</document>
